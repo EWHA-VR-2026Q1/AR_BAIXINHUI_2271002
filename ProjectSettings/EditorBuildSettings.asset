@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SamplesResources/Scenes/0-Main.unity
     guid: a09cb257d566c489595b16ab37547666
-  - enabled: 1
+  - enabled: 0
     path: Assets/HW18_AR_Test/HW18_AR_Test.unity
     guid: 3f3c51b73ebf4497942785159713e64b
+  - enabled: 0
+    path: Assets/HW20_LimitedBody/Scenes/HW20_LimitedBody.unity
+    guid: 969fffdcc57d5ff47a7808e36bd85ff1
   m_configObjects: {}
