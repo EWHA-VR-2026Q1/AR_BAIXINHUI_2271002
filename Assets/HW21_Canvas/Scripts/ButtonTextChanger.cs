@@ -1,23 +1,47 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class ButtonTextChanger : MonoBehaviour
 {
-    public TextMeshProUGUI targetText;
+    [SerializeField] private Image targetImage;
+    [SerializeField] private Text titleText;
+    [SerializeField] private Text captionText;
+    [SerializeField] private Sprite imageA;
+    [SerializeField] private Sprite imageB;
+    [SerializeField] private Sprite imageC;
 
-    private int _clickCount = 0;
-    private static readonly string[] Messages =
+    private void Start()
     {
-        "버튼을 클릭하세요!",
-        "1번 클릭됨 ✓",
-        "2번 클릭됨 ✓",
-        "리셋! 다시 클릭해보세요."
-    };
+        ShowA();
+    }
 
-    public void OnButtonClick()
+    public void ShowA()
     {
-        _clickCount = (_clickCount + 1) % Messages.Length;
-        if (targetText != null)
-            targetText.text = Messages[_clickCount];
+        ShowImage(imageA, "Image A", "A: Puppy");
+    }
+
+    public void ShowB()
+    {
+        ShowImage(imageB, "Image B", "B: Cat close-up");
+    }
+
+    public void ShowC()
+    {
+        ShowImage(imageC, "Image C", "C: Cat nose close-up");
+    }
+
+    private void ShowImage(Sprite sprite, string title, string caption)
+    {
+        if (targetImage != null)
+        {
+            targetImage.sprite = sprite;
+            targetImage.preserveAspect = true;
+        }
+
+        if (titleText != null)
+            titleText.text = title;
+
+        if (captionText != null)
+            captionText.text = caption;
     }
 }
