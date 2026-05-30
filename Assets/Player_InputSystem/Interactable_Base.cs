@@ -1,10 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-// 인스펙터에 확실히 보이게 하기 위한 선언
-[System.Serializable]
-public class InteractableEvent : UnityEvent<GameObject> { }
-
 public class Interactable_Base : MonoBehaviour, IInteractable
 {
     [Header("Interface(Event)와 Actor를 연결하는 클래스. \n+를 클릭하여 Actor들을 할당함.")]

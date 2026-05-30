@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/HW20_LimitedBody/Scenes/HW20_LimitedBody.unity
-    guid: 1228b733be084bb4fa06234ad524a198
+    path: Assets/HW21_Canvas/Scenes/HW21_Canvas.unity
+    guid: d1f3110164d042745ae6f9b5c9eb2eca
   m_configObjects: {}
